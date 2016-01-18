@@ -1,49 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <Button
-        android:id="@+id/buttonFragmentMain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_alignParentBottom="true"
-        android:text="계산하기"/>
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpx2.android20151205.MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="10dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="우리아이 예상키"
-            android:textSize="25dp"
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_margin="15dp"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"/>
+            android:background="@drawable/logo_aligned"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="아빠키"
-            android:textSize="20dp"/>
         <EditText
-            android:id="@+id/editFragmentMainID"
+            android:id="@+id/editMainActivityName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="아빠의 키를 입력하세요 (단위 cm)"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="엄마키"
-            android:textSize="20dp"/>
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:hint="이름"
+            android:layout_below="@id/imageLogo"/>
+
         <EditText
-            android:id="@+id/editFragmentMainPW"
+            android:id="@+id/editMainActivityBirth"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="엄마의 키를 입력하세요 (단위 cm)"/>
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/editMainActivityName"
+            android:hint="생년월일(8숫자)"/>
+
 
     </LinearLayout>
-
+    <TextView
+        android:id="@+id/textViewMale"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:text="남"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/linearLayout1"/>
+    <CheckBox
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/linearLayout1"/>
+    <TextView
+        android:id="@+id/textViewFemale"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:text="여"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/linearLayout1"/>
+    <CheckBox
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/linearLayout1"/>
+    <Button
+        android:id="@+id/buttonFragmentMain"
+        android:layout_width="80"
+        android:layout_height="50dp"
+        android:layout_below="@id/textViewFemale"
+        android:layout_margin="10dp"
+        android:text="등 록"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:background="#fd3270"/>
 </RelativeLayout>

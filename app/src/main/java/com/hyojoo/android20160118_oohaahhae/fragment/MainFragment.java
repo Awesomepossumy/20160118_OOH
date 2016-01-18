@@ -46,9 +46,10 @@ public class MainFragment extends Fragment {
             int id = v.getId();
 
             if (id == R.id.buttonFragmentMain) {
-                String string_id = ((EditText) wholeView.findViewById(R.id.editFragmentMainID)).getText().toString();
-                String string_pw = ((EditText) wholeView.findViewById(R.id.editFragmentMainPW)).getText().toString();
-                Toast.makeText(getActivity(), string_id + " / " + string_pw, Toast.LENGTH_SHORT).show();
+//                String string_id = ((EditText) wholeView.findViewById(R.id.editFragmentMainID)).getText().toString();
+//                String string_pw = ((EditText) wholeView.findViewById(R.id.editFragmentMainPW)).getText().toString();
+//                Toast.makeText(getActivity(), string_id + " / " + string_pw, Toast.LENGTH_SHORT).show();
+            //
             }
         }
     };
